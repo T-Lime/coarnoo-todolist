@@ -38,3 +38,27 @@ body{
     justify-content: space-between;
     padding: 1em;
 }
+
+.task-done{
+    text-decoration: line-through;
+}
+
+.task button{
+    border: none;
+    background: none;
+}
+
+.task button:nth-child(1){
+    color: green;
+}
+.task button:nth-child(2){
+    color: red;
+}
+
+.fa-clock-rotate-left{
+    color: gray;
+}
+
+.check-task{
+    background-color: skyblue;
+}
