@@ -11,8 +11,10 @@ body{
 #task-input{
     border: 1px solid cornflowerblue;
     background-color: white;
+    width: 50vh;
 }
 #add-button{
+    width: 7vh;
     background: none;
     border: solid 1px cornflowerblue;
 }
@@ -92,7 +94,7 @@ body{
 }
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
     body{
         font-size: 13px;
     }
@@ -100,4 +102,11 @@ body{
         display: flex;
         justify-content: center;
     }
+    #task-input{
+        width: 30vh;
+    }
+    #add-button{
+        width: 5vh;
+    }
 }
+
