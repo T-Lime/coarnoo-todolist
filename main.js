@@ -91,6 +91,12 @@ function toggleComplete(id){
             break;
         }
     }
+
+    if (mode === "ongoing") {
+        filterList = taskList.filter(task => !task.isComplete);
+    } else if (mode === "done") {
+        filterList = taskList.filter(task => task.isComplete);
+    }
     render();
 }
 function deleteTask(id){
