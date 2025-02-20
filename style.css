@@ -3,34 +3,53 @@ body{
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+#task-input{
+    border: 1px solid cornflowerblue;
+    background-color: white;
+}
+#add-button{
+    background: none;
+    border: solid 1px cornflowerblue;
+}
+
+
 .container{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 .task-area{
-    border: 1px solid blue;
+    border: 1px solid cornflowerblue;
+    margin: 1em;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 }
 
 .task-tabs{
     display: flex;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid cornflowerblue;
+    padding: 1em;
 }
 .task-tabs div{
-    padding: 1em;
+    padding: 0.5em;
 }
 
 #under-line{
     height: 4px;
     background-color: cornflowerblue;
     position: absolute;
-    width: 80px;
+    width: 0;
     left: 0;
-    top: 52px;
+    top: 0;
     padding: 0;
+    transition: 0.7s;
 }
 
 .task{
@@ -61,4 +80,24 @@ body{
 
 .check-task{
     background-color: skyblue;
+}
+
+.task-tabs div{
+    cursor: pointer;
+}
+
+.task, .check-task{
+    border-bottom: 1px solid cornflowerblue;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px; */
+}
+
+
+@media screen and (max-width: 765px) {
+    body{
+        font-size: 13px;
+    }
+    .task-tabs{
+        display: flex;
+        justify-content: center;
+    }
 }
